@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# This script is a wrapper for svls with a pre-configured ruleset.
+# The ruleset should have the same suffix, and sit in `toml/`.
+# To create a new ruleset, first create the TOML configuration, then
+# hardlink this file like `ln svls-wrapperTemplate bin/svls-foo`.
+# A hardlink, as opposed to a copy, means that edits to this script affect all
+# rulesets - That's easier than editing lots of scripts.
+
+THIS="${BASH_SOURCE[0]:-$0}"
+SUFFIX="$(basename "${THIS}" | tr "-" "\t" | cut -f2)"
+BIN_DIR="$(dirname "${THIS}")"
+TOML_DIR="$(dirname "${BIN_DIR}")/toml"
+SVLINT_CONFIG="${TOML_DIR}/svlint-${SUFFIX}.toml" svls $*
