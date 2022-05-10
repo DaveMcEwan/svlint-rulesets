@@ -1,0 +1,33 @@
+[option]
+
+[rules]
+blocking_assignment_in_always_ff = true
+case_default = true
+default_nettype_none = true
+enum_with_type = true
+explicit_case_default = true
+explicit_if_else = true
+function_same_as_system_function = true
+function_with_automatic = true
+inout_with_tri = true
+input_with_var = true
+interface_port_with_modport = true
+legacy_always = true
+level_sensitive_always = true
+localparam_explicit_type = true
+localparam_type_twostate = true
+loop_variable_declaration = true
+non_ansi_module = true
+non_blocking_assignment_in_always_comb = true
+output_with_var = true
+parameter_explicit_type = true
+parameter_in_package = true
+parameter_type_twostate = true
+priority_keyword = true
+sequential_block_in_always_comb = true
+sequential_block_in_always_ff = true
+sequential_block_in_always_latch = true
+unique0_keyword = true
+unique_keyword = true
+wire_reg = true
+

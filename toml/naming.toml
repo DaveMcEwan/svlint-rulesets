@@ -1,0 +1,33 @@
+[option]
+prefix_inout = "b_"
+prefix_input = "i_"
+prefix_output = "o_"
+prefix_label = "l_"
+prefix_instance = "u_"
+prefix_interface = "ifc_"
+
+# NOTE: (upper|lower)camelcase used instead of prefix_(module|package).
+#prefix_module = "mod_"
+#prefix_package = "pkg_"
+
+[rules]
+function_same_as_system_function = true
+generate_case_with_label = true
+generate_for_with_label = true
+generate_if_with_label = true
+if_with_begin = true
+lowercamelcase_interface = false
+lowercamelcase_module = false
+lowercamelcase_package = true
+prefix_inout = true
+prefix_input = true
+prefix_instance = true
+prefix_interface = true
+prefix_module = false
+prefix_output = true
+prefix_package = false
+priority_keyword = false
+uppercamelcase_interface = false
+uppercamelcase_module = true
+uppercamelcase_package = false
+
