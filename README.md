@@ -40,7 +40,7 @@ Rulesets
   this ruleset.
 - functional - Only functional rules are enabled, but none which check for
   style or naming conventions.
-  These rules check for syntax which leads to inconsistency between synthesis
+  These rules check for syntax that may lead to inconsistency between synthesis
   and simulation, as well as valid-but-unintuitive constructs, e.g. using a
   system-function name as a variable identifier.
 - naming - Only rules which check against a naming convention are enabled.
@@ -49,8 +49,8 @@ Rulesets
 Implementation
 --------------
 
-All of the `bin/svlint-*` scripts created by running `make` are hardlinks to
-`svlint-wrapperTemplate`.
+All of the `bin/svlint-*` and `bin/svls-*` scripts created by running `make`
+are hardlinks to `wrapperTemplate`.
 This means that they are all effectively the same file, and a change to one
 will change all of them.
 
