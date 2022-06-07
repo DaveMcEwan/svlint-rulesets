@@ -1,0 +1,78 @@
+# svlint-ddvc
+# Aim to comply with (draft) Nordic DDVC.
+
+[option]
+prefix_inout = "b_"
+prefix_input = "i_"
+prefix_output = "o_"
+prefix_label = "la_"
+prefix_instance = "u_"
+prefix_package = "pa_"
+
+[rules]
+
+# Module declaration.
+non_ansi_module = true
+inout_with_tri = true
+input_with_var = true
+output_with_var = true
+interface_port_with_modport = true
+
+# Parameter type.
+enum_with_type = true
+parameter_in_package = true
+parameter_explicit_type = true
+parameter_type_twostate = true
+localparam_explicit_type = true
+localparam_type_twostate = true
+unique0_keyword = true
+unique_keyword = true
+priority_keyword = true
+
+# Signal type.
+default_nettype_none = true
+wire_reg = true
+
+# Function declaration.
+function_same_as_system_function = true
+function_with_automatic = true
+
+# Generate region.
+generate_keyword_forbidden = true
+genvar_declaration_in_loop = true
+loop_variable_declaration = true
+generate_case_with_label = true
+generate_for_with_label = true
+generate_if_with_label = true
+
+# Assignment statement.
+legacy_always = true
+level_sensitive_always = true
+blocking_assignment_in_always_ff = true
+non_blocking_assignment_in_always_comb = true
+
+# Full-specified conditionals.
+case_default = true
+explicit_case_default = true
+explicit_if_else = true
+sequential_block_in_always_comb = true
+sequential_block_in_always_ff = true
+sequential_block_in_always_latch = true
+
+# begin/end keywords.
+if_with_begin = false
+for_with_begin = false
+
+# Naming convention.
+# TODO: Enable rules from <https://github.com/DaveMcEwan/svlint/tree/regexRules>
+prefix_inout = true
+prefix_input = true
+prefix_output = true
+prefix_instance = true
+prefix_interface = true
+prefix_package = true
+
+# Style/whitespace/formatting convention.
+# TODO: Enable rules from <https://github.com/DaveMcEwan/svlint/tree/styleRules>
+tab_character = true
+
