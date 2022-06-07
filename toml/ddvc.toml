@@ -73,6 +73,16 @@ prefix_interface = true
 prefix_package = true
 
 # Style/whitespace/formatting convention.
-# TODO: Enable rules from <https://github.com/DaveMcEwan/svlint/tree/styleRules>
+style_commaleading = true
+style_indent = true
+style_keyword_0or1space = true
+style_keyword_0space = true
+style_keyword_1or2space = true
+style_keyword_1space = true
+style_keyword_construct = true
+style_keyword_datatype = true
+style_keyword_end = true
+style_keyword_maybelabel = true
+style_keyword_newline = true
 tab_character = true
 

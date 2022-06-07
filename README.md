@@ -44,6 +44,8 @@ Rulesets
   and simulation, as well as valid-but-unintuitive constructs, e.g. using a
   system-function name as a variable identifier.
 - naming - Only rules which check against a naming convention are enabled.
+- style - Only rules which check the use of whitespace are enabled.
+- ddvc - (WIP) Enforce an draft extension of Nordic's DDVC.
 
 
 Implementation
