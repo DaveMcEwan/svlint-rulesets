@@ -1,3 +1,5 @@
+# svlint-naming
+
 [option]
 prefix_inout = "b_"
 prefix_input = "i_"
